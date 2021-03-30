@@ -10,10 +10,12 @@ const ToDo = () => {
     return (
         <>
             <div>
-                <ShowList myList={parentList}></ShowList>
+                {/* <ShowList myList={parentList}></ShowList> */}
                 
             </div>
-            <div><AddToDo getToDoListInParent={getList}></AddToDo></div>
+            {/* <div><AddToDo getToDoListInParent={getList}></AddToDo></div> */}
+            This is the basic app to be deployed
+            Purpose is to check for sso
         </>
     )
 }
