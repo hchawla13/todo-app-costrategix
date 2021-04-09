@@ -8,13 +8,13 @@ const TestApi = () => {
             client_id: '00053f8d-a5a5-106d-8039-a0cfac1d0000',
             token_type_hint: 'access_token'
         };
-        // const promise = fetch(revokeTokenEndpoint, {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        //     body: JSON.stringify(data),
-        // }).then(resp => resp.json());
-        // return promise;
-        return axios.post(revokeTokenEndpoint, data);
+        const promise = fetch(revokeTokenEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: JSON.stringify(data),
+        }).then(resp => resp.json());
+        return promise;
+        //return axios.post(revokeTokenEndpoint, data);
     }
     
     const handleLogout = async () => {
