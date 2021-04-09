@@ -11,7 +11,7 @@ const TestApi = () => {
         const promise = fetch(revokeTokenEndpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: JSON.stringify(data),
+            body: data,
         }).then(resp => resp.json());
         return promise;
         //return axios.post(revokeTokenEndpoint, data);
