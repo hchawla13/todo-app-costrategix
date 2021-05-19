@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 import {makeid, sha256} from '../utils/utilFn';
 import base64url from "base64url";
 const ToDo = () => {
+    console.log("test message 1")
     const redirect_uri = 'https://costrategix.herokuapp.com';
     const client_id = '0oafzo9ipaqvfVTyG5d6';
     useEffect(()=>{
